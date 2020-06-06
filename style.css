@@ -1,0 +1,175 @@
+@font-face{
+    font-family: 'Sunberry';
+    src: url('fonts/Sunberry.ttf');
+    font-family: 'Product', Google Sans;
+    src: url();
+}
+/* h1{
+    font-family: 'Sunberry';
+}
+h6{
+    font-family: 'Product', Google Sans;
+    opacity: 0.6;
+    position: relative;
+    left: 100px;
+} */
+
+
+.top-header{
+    font-family: 'Product', Google Sans;
+}
+.header-text{
+    font-weight: bolder;
+    opacity: 0.5;
+    font-size: 0.9rem;
+}
+.header-font{
+    color: black;
+    opacity: 0.4;
+}
+.header-font:hover{
+    opacity: 0.9;
+    color: black;
+    transition: 1s;
+    
+}
+.my-name{
+    font-family: 'Sunberry';
+    font-weight: bold;
+    opacity: 0.9;
+}
+.name-bottom{
+    font-family: 'Product', Google Sans;
+    font-weight: bold;
+    /* opacity: 0.5; */
+    position: absolute;
+    /* left: 650px; */
+    left: 53%;
+
+}
+.navigation a{
+    
+    text-decoration: none;
+    color: black;
+    font-family: 'Product', Google Sans;
+    font-size: 0.85rem;
+    font-weight: bold;
+
+
+}
+
+/* .cover-photo{
+
+   border-radius: 40px;
+    
+
+} */
+.profile-picture{
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+    z-index: 1;
+    
+}
+
+@media screen and (max-width: 1000px) and (max-width:800px) {
+    .profile-picture{
+        width: 130px;
+        height: 130px;
+       
+
+    }
+}
+@media screen and (max-width: 801px) and (max-width:650px) {
+    .profile-picture{
+        width: 90px;
+        height: 90px;
+       
+
+    }
+}
+
+
+
+/* .bg-custom{
+
+    background-image: url("images/gif4.gif");
+
+
+} */
+
+.card-customization:hover{
+    /* box-shadow: 2px 2px 5px grey; */
+    
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 
+                    0 0 0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    
+    transition: 0.8s;
+
+    
+    
+}
+.card-customization{
+    width: 18rem;
+}
+
+/* @media screen and (max-width: 770px) {
+    .card-customization{
+        justify-content: center;
+    }
+} */
+
+@media screen and (max-width: 770px) {
+    .card-customization {
+        min-width: 100%; 
+        
+        text-align: center;
+    }
+    /* #main {margin-left: 216px;} */
+  }
+
+.contact-info{
+    font-family: 'Product', Google Sans;
+    font-weight: bolder;
+}
+.gh-icon{
+
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    background-color: black;
+}
+.li-icon{
+
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    background-color: #0e76a8;
+}
+.fb-icon{
+
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    background-color: #3b5998;
+}
+.sk-icon{
+
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    background-color:  #00aff0;
+}
+.pint-icon{
+
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    background-color:  #c8232c;
+}
