@@ -156,6 +156,7 @@ h6{
     height: 25px;
     justify-content: center;
     background-color: #3b5998;
+    /* background: linear-gradient(to right, #9c9e9f, #f6f6f6); */
 }
 .sk-icon{
 
@@ -172,4 +173,15 @@ h6{
     height: 25px;
     justify-content: center;
     background-color:  #c8232c;
+}
+
+.my-name-last{
+    color: #b90b14;
+}
+
+.my-name-last:hover{
+    background: linear-gradient(to right, #3f3e3e, rgb(134, 132, 132), rgb(100, 53, 53));
+    color: white;
+    transition-duration: 0.5s ;
+
 }
