@@ -66,9 +66,17 @@ h6{
 } */
 .profile-picture{
     position: absolute;
-    right: 30px;
-    bottom: 0px;
+    /* right: 30px;
+    bottom: 0px; */
     z-index: 1;
+
+    right: 270px;
+    bottom: 0px;
+    top: 120px;
+
+    
+    
+
     
 }
 
@@ -200,7 +208,7 @@ h6{
 }
 
 /* Animation */
-.anim-typewriter{
+/* .anim-typewriter{
   animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
@@ -211,4 +219,75 @@ h6{
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
+}  */
+
+/* Border Animation CSS */
+
+#about-profile-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 15px solid transparent;
+
+    
+    
+}
+/* .about-profile-banner {
+    background: url('https://s3-eu-west-1.amazonaws.com/img3.n-ix.com/wp-content/uploads/2016/12/16152229/Data-Science-Outsourcing-BLOG-banner-1920-Copy-1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 550px;
+    position: relative;
 } */
+/* .about-content-center {
+} */
+/* .about-h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: white;
+} */
+@-webkit-keyframes rounded{
+0%{-webkit-transform:scale(0.6, 0.6);transform:scale(0.6, 0.6);opacity:0.0}
+50%{opacity:1.0}
+100%{-webkit-transform:scale(1, 1);transform:scale(1, 1);opacity:0.0}
+}
+
+@keyframes rounded{
+0%{-webkit-transform:scale(0.6, 0.6);transform:scale(0.6, 0.6);opacity:0.0}
+50%{opacity:1.0}
+100%{-webkit-transform:scale(1, 1);transform:scale(1, 1);opacity:0.0}
+}
+.cc-profile-image a {
+    position: relative;
+    z-index: 0;
+}
+.cc-profile-image a:before {
+    content: "";
+    border: 15px solid rgba(55,140,63,0.6);
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 0;
+
+    
+
+    -webkit-animation: rounded 1.6s ease-out;
+    animation: rounded 1.6s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    opacity: 0.0;
+    z-index: -1;
+}
+
+.align{
+    position: absolute;
+    /* right: 30px;
+    bottom: 0px; */
+
+    right: 270px;
+    bottom: 0px;
+    top: 120px;
+}

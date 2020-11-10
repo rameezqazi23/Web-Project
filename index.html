@@ -12,6 +12,24 @@
     <!-- AOS Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!--Border Animation-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- jQuery 3.3.1 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+
     <title>Portfolio</title>
 </head>
 
@@ -38,6 +56,13 @@
             </div> -->
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            
+            <div class="align">
+                <div class="cc-profile-image">
+                    <a href="#"><img id="about-profile-image" src="images/profile-image.jpg" alt="Image"></a>
+                </div>
+            </div>
+
             <span class="header-text text-muted">
                 Hello World, My Name is RAMEEZ QAZI
             </span>
@@ -102,10 +127,11 @@
 
         <div class="row">
             <div class="col mx-5 my-2 py-5">
-                <img class="img-fluid cover-photo" src="images/cover-image03.jpg" alt="Picture">
+                <img class="img-fluid cover-photo" src="images/manOnTable.52be3144.svg" alt="Picture" width="1000px"
+                    height="20px">
 
-                <img class="img-fluid profile-picture rounded-circle" width="170px" height="170px"
-                    src="images/profile-image.jpg" alt="Picture">
+                <!-- <img class="img-fluid profile-picture rounded-circle" width="170px" height="170px"
+                    src="images/profile-image.jpg" alt="Picture"> -->
 
             </div>
 
@@ -194,13 +220,23 @@
         </div>
 
         <div class="row">
-            <div class="col bottom-social-icon">
-                <a href="#"><i class="fab fa-github px-1 pt-1 text-light gh-icon"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in px-1 pt-1 text-light li-icon"></i></a>
-                <a href="#"><i class="fab fa-facebook-f px-1 pt-1 text-light fb-icon"></i></a>
-                <!-- <a href="#"><i class="fab fa-instagram px-1 pt-1 text-light ins-icon"></i></a> -->
-                <a href="#"><i class="fab fa-skype px-1 pt-1 text-light sk-icon"></i></a>
-                <a href="#"><i class="fab fa-pinterest px-1 pt-1 text-light pint-icon"></i></a>
+            <div class="col bottom-social-icon ">
+                <div class="d-inline" data-aos="fade-down" data-aos-delay="100">
+                    <a href="#"><i class="fab fa-github px-1 pt-1 text-light gh-icon"></i></a>
+                </div>
+                <div class="d-inline" data-aos="fade-down" data-aos-delay="200">
+                    <a href="#"><i class="fab fa-linkedin-in px-1 pt-1 text-light li-icon"></i></a>
+                </div>
+                <div class="d-inline" data-aos="fade-down" data-aos-delay="300">
+                    <a href="#"><i class="fab fa-facebook-f px-1 pt-1 text-light fb-icon"></i></a>
+                </div>
+                <div class="d-inline" data-aos="fade-down" data-aos-delay="400">
+                    <!-- <a href="#"><i class="fab fa-instagram px-1 pt-1 text-light ins-icon"></i></a> -->
+                    <a href="#"><i class="fab fa-skype px-1 pt-1 text-light sk-icon"></i></a>
+                </div>
+                <div class="d-inline" data-aos="fade-down" data-aos-delay="500">
+                    <a href="#"><i class="fab fa-pinterest px-1 pt-1 text-light pint-icon"></i></a>
+                </div>
 
             </div>
         </div>
