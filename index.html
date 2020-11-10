@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="style.css">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Portfolio</title>
 </head>
 
@@ -38,6 +41,13 @@
             <span class="header-text text-muted">
                 Hello World, My Name is RAMEEZ QAZI
             </span>
+
+            <!-- <span class="line-1 anim-typewriter">
+                Hello World, My Name is RAMEEZ QAZI
+            </span> -->
+
+
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -104,11 +114,11 @@
 
     </div>
     <div class="container">
-        <div class="row" id="my-projects">
+        <div class="row" id="my-projects zoom-in-down">
 
             <div class="col mt-5 cards">
 
-                <div class="card card-customization">
+                <div class="card card-customization" data-aos="zoom-out-right" data-aos-delay="100">
                     <!-- <img src="images/assignment04-image.jpg" class="card-img-top" alt="Picture"> -->
                     <h1 class="bg-dark text-light h-100 p-4">Comming Soon...</h1>
                     <div class="card-body">
@@ -121,7 +131,7 @@
             </div>
 
             <div class="col mt-5 cards">
-                <div class="card card-customization">
+                <div class="card card-customization" data-aos="zoom-out-right" data-aos-delay="100">
                     <img src="images/assignment03-image.png" class="card-img-top" alt="Picture">
                     <div class="card-body">
                         <h5 class="card-title">Saylani Web Page</h5>
@@ -132,7 +142,7 @@
                 </div>
             </div>
             <div class="col mt-5 cards">
-                <div class="card card-customization">
+                <div class="card card-customization" data-aos="zoom-out-right" data-aos-delay="100">
                     <img src="images/assignment02-image.png" class="card-img-top" alt="Picture">
                     <div class="card-body">
                         <h5 class="card-title">Registration Form</h5>
@@ -144,7 +154,7 @@
             </div>
             <div class="col mt-5 cards">
 
-                <div class="card card-customization">
+                <div class="card card-customization" data-aos="zoom-out-right" data-aos-delay="100">
                     <img src="images/assignment01-image.png" class="card-img-top" alt="Picture">
                     <div class="card-body">
                         <h5 class="card-title">Periodic Table</h5>
@@ -214,6 +224,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+    <!--AOS CDN-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
 </body>
 
