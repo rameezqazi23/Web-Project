@@ -1,9 +1,10 @@
-@font-face{
+@font-face {
     font-family: 'Sunberry';
     src: url('fonts/Sunberry.ttf');
     font-family: 'Product', Google Sans;
     src: url();
 }
+
 /* h1{
     font-family: 'Sunberry';
 }
@@ -14,48 +15,48 @@ h6{
     left: 100px;
 } */
 
-
-.top-header{
+.top-header {
     font-family: 'Product', Google Sans;
 }
-.header-text{
+
+.header-text {
     font-weight: bolder;
     opacity: 0.5;
     font-size: 0.9rem;
 }
-.header-font{
+
+.header-font {
     color: black;
     opacity: 0.4;
 }
-.header-font:hover{
+
+.header-font:hover {
     opacity: 0.9;
     color: black;
     transition: 1s;
-    
 }
-.my-name{
+
+.my-name {
     font-family: 'Sunberry';
     font-weight: bold;
     opacity: 0.9;
 }
-.name-bottom{
+
+.name-bottom {
     font-family: 'Product', Google Sans;
     font-weight: bold;
     /* opacity: 0.5; */
     position: absolute;
     /* left: 650px; */
     left: 53%;
-
 }
-.navigation a{
-    
+
+.navigation a {
     text-decoration: none;
     color: black;
     font-family: 'Product', Google Sans;
     font-size: 0.85rem;
     font-weight: bold;
-
-
 }
 
 /* .cover-photo{
@@ -64,40 +65,35 @@ h6{
     
 
 } */
-.profile-picture{
+
+.profile-picture {
     position: absolute;
     /* right: 30px;
     bottom: 0px; */
     z-index: 1;
-
     right: 270px;
     bottom: 0px;
     top: 120px;
-
-    
-    
-
-    
 }
 
 @media screen and (max-width: 1000px) and (max-width:800px) {
-    .profile-picture{
-        width: 130px;
-        height: 130px;
-       
-
+    .align {
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        top: 100px;
+        bottom: 50px;
     }
 }
+
 @media screen and (max-width: 801px) and (max-width:650px) {
-    .profile-picture{
+    .align {
         width: 90px;
         height: 90px;
-       
-
+        z-index: -1;
+        top: 100px;
     }
 }
-
-
 
 /* .bg-custom{
 
@@ -106,19 +102,13 @@ h6{
 
 } */
 
-.card-customization:hover{
+.card-customization:hover {
     /* box-shadow: 2px 2px 5px grey; */
-    
-    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 
-                    0 0 0 2px rgb(255,255,255),
-                    0.3em 0.3em 1em rgba(0,0,0,0.3);
-    
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     transition: 0.8s;
-
-    
-    
 }
-.card-customization{
+
+.card-customization {
     width: 18rem;
 }
 
@@ -130,35 +120,49 @@ h6{
 
 @media screen and (max-width: 770px) {
     .card-customization {
-        min-width: 100%; 
-        
+        min-width: 100%;
         text-align: center;
     }
     /* #main {margin-left: 216px;} */
-  }
+}
 
-.contact-info{
+@media screen and (max-width: 500px) {
+    .cover-photo {
+        /* min-width: 100%;
+        max-width: 100%;
+        text-align: center; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        border-radius: 10px;
+
+    }
+    /* #main {margin-left: 216px;} */
+}
+
+.contact-info {
     font-family: 'Product', Google Sans;
     font-weight: bolder;
 }
-.gh-icon{
 
+.gh-icon {
     border-radius: 50%;
     width: 25px;
     height: 25px;
     justify-content: center;
     background-color: black;
 }
-.li-icon{
 
+.li-icon {
     border-radius: 50%;
     width: 25px;
     height: 25px;
     justify-content: center;
     background-color: #0e76a8;
 }
-.fb-icon{
 
+.fb-icon {
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -166,32 +170,39 @@ h6{
     background-color: #3b5998;
     /* background: linear-gradient(to right, #9c9e9f, #f6f6f6); */
 }
-.sk-icon{
 
+.sk-icon {
     border-radius: 50%;
     width: 25px;
     height: 25px;
     justify-content: center;
-    background-color:  #00aff0;
+    background-color: #00aff0;
 }
-.pint-icon{
 
+.pint-icon {
     border-radius: 50%;
     width: 25px;
     height: 25px;
     justify-content: center;
-    background-color:  #c8232c;
+    background-color: #c8232c;
 }
 
-.my-name-last{
+.my-name-last {
     color: #b90b14;
 }
 
-.my-name-last:hover{
+.my-name-last:hover {
     background: linear-gradient(to right, #3f3e3e, rgb(134, 132, 132), rgb(100, 53, 53));
     color: white;
-    transition-duration: 0.5s ;
+    transition-duration: 0.5s;
+}
 
+.cover-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-radius: 10px;
 }
 
 /* .line-1{
@@ -208,6 +219,7 @@ h6{
 }
 
 /* Animation */
+
 /* .anim-typewriter{
   animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
@@ -228,10 +240,8 @@ h6{
     width: 200px;
     border-radius: 50%;
     border: 15px solid transparent;
-
-    
-    
 }
+
 /* .about-profile-banner {
     background: url('https://s3-eu-west-1.amazonaws.com/img3.n-ix.com/wp-content/uploads/2016/12/16152229/Data-Science-Outsourcing-BLOG-banner-1920-Copy-1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -241,39 +251,61 @@ h6{
     min-height: 550px;
     position: relative;
 } */
+
 /* .about-content-center {
 } */
+
 /* .about-h2 {
     font-size: 2.5em;
     font-weight: 700;
     color: white;
 } */
-@-webkit-keyframes rounded{
-0%{-webkit-transform:scale(0.6, 0.6);transform:scale(0.6, 0.6);opacity:0.0}
-50%{opacity:1.0}
-100%{-webkit-transform:scale(1, 1);transform:scale(1, 1);opacity:0.0}
+
+@-webkit-keyframes rounded {
+    0% {
+        -webkit-transform: scale(0.6, 0.6);
+        transform: scale(0.6, 0.6);
+        opacity: 0.0
+    }
+    50% {
+        opacity: 1.0
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 0.0
+    }
 }
 
-@keyframes rounded{
-0%{-webkit-transform:scale(0.6, 0.6);transform:scale(0.6, 0.6);opacity:0.0}
-50%{opacity:1.0}
-100%{-webkit-transform:scale(1, 1);transform:scale(1, 1);opacity:0.0}
+@keyframes rounded {
+    0% {
+        -webkit-transform: scale(0.6, 0.6);
+        transform: scale(0.6, 0.6);
+        opacity: 0.0
+    }
+    50% {
+        opacity: 1.0
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 0.0
+    }
 }
+
 .cc-profile-image a {
     position: relative;
     z-index: 0;
 }
+
 .cc-profile-image a:before {
     content: "";
-    border: 15px solid rgba(55,140,63,0.6);
+    border: 15px solid rgba(55, 140, 63, 0.6);
     border-radius: 50%;
     height: 200px;
     width: 200px;
     position: absolute;
     left: 0;
-
-    
-
     -webkit-animation: rounded 1.6s ease-out;
     animation: rounded 1.6s ease-out;
     -webkit-animation-iteration-count: infinite;
@@ -282,11 +314,10 @@ h6{
     z-index: -1;
 }
 
-.align{
+.align {
     position: absolute;
     /* right: 30px;
     bottom: 0px; */
-
     right: 250px;
     bottom: 0px;
     top: 120px;
