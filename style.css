@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'Sunberry';
+    font-family: 'Sunberry', Sans;
     src: url('fonts/Sunberry.ttf');
     font-family: 'Product', Google Sans;
-    src: url();
+    src: url(./fonts/GoogleSans-Medium.ttf);
 }
 
 html {
@@ -25,6 +25,8 @@ h6{
 }
 
 .header-text {
+
+    text-decoration: none;
     font-weight: bolder;
     opacity: 0.5;
     font-size: 0.9rem;
@@ -42,7 +44,7 @@ h6{
 }
 
 .my-name {
-    font-family: 'Sunberry';
+    font-family: 'Sunberry', Sans;
     font-weight: bold;
     opacity: 0.9;
 }
